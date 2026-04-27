@@ -44,6 +44,15 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
+          <div className="flex items-center space-x-6 mr-6 border-r border-white/10 pr-6">
+            <a href="mailto:sumitkumards07@gmail.com" className="text-sm text-gray-400 hover:text-brand-500 transition-colors">
+              sumitkumards07@gmail.com
+            </a>
+            <a href="tel:+918950013181" className="text-sm text-gray-400 hover:text-brand-500 transition-colors font-semibold">
+              +91 8950013181
+            </a>
+          </div>
+
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -91,6 +100,11 @@ const Navbar: React.FC = () => {
                   {link.name}
                 </a>
               ))}
+            
+              <div className="pt-6 mt-6 border-t border-white/10 flex flex-col space-y-4">
+                <a href="mailto:sumitkumards07@gmail.com" className="text-gray-400">sumitkumards07@gmail.com</a>
+                <a href="tel:+918950013181" className="text-white font-semibold">+91 8950013181</a>
+              </div>
             </div>
           </motion.div>
         )}
